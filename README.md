@@ -1,4 +1,8 @@
-# ENR1M SDK
+# Prime SDK
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/your-org/power-contract/main/assets/prime-logo.png" alt="Prime SDK Logo" width="120" height="120">
+</div>
 
 [![npm version](https://badge.fury.io/js/@enr1m%2Fsdk.svg)](https://badge.fury.io/js/@enr1m%2Fsdk)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5%2B-blue)](https://www.typescriptlang.org/)
