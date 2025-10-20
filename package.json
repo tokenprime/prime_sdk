@@ -1,0 +1,63 @@
+{
+  "name": "@enr1m/sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for ENR1M Power Plant Tokenization Platform",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "build:watch": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "dev": "tsx src/examples/demo.ts",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "ethereum",
+    "solidity",
+    "typescript",
+    "web3",
+    "defi",
+    "tokenization",
+    "power-plant",
+    "revenue-distribution",
+    "viem",
+    "abitype"
+  ],
+  "author": "ENR1M Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enr1m/power-contract"
+  },
+  "dependencies": {
+    "abitype": "^1.0.5",
+    "viem": "^2.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^8.57.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=5.0.4"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
