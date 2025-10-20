@@ -1,7 +1,7 @@
 {
-  "name": "@enr1m/sdk",
+  "name": "@prime/sdk",
   "version": "1.0.0",
-  "description": "TypeScript SDK for ENR1M Power Plant Tokenization Platform",
+  "description": "TypeScript SDK for Prime Power Plant Tokenization Platform",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
@@ -31,7 +31,7 @@
     "viem",
     "abitype"
   ],
-  "author": "ENR1M Team",
+  "author": "Prime Team",
   "license": "MIT",
   "repository": {
     "type": "git",

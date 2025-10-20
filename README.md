@@ -1,10 +1,10 @@
 # Prime SDK
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/your-org/power-contract/main/assets/prime-logo.png" alt="Prime SDK Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/tokenprime/prime_sdk/main/assets/logo-prime.png" alt="Prime SDK Logo" width="150" height="150">
 </div>
 
-[![npm version](https://badge.fury.io/js/@enr1m%2Fsdk.svg)](https://badge.fury.io/js/@enr1m%2Fsdk)
+[![npm version](https://badge.fury.io/js/@prime%2Fsdk.svg)](https://badge.fury.io/js/@prime%2Fsdk)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5%2B-blue)](https://www.typescriptlang.org/)
 [![Viem](https://img.shields.io/badge/Viem-2.21%2B-green)](https://viem.sh/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -27,17 +27,17 @@ A modern, type-safe TypeScript SDK for interacting with ENR1M Power Plant Tokeni
 ### Installation
 
 ```bash
-npm install @enr1m/sdk viem
+npm install @prime/sdk viem
 # or
-yarn add @enr1m/sdk viem
+yarn add @prime/sdk viem
 # or
-pnpm add @enr1m/sdk viem
+pnpm add @prime/sdk viem
 ```
 
 ### Basic Usage
 
 ```typescript
-import { createENR1MClient, SUPPORTED_CHAINS } from '@enr1m/sdk'
+import { createENR1MClient, SUPPORTED_CHAINS } from '@prime/sdk'
 
 // Create client (read-only)
 const client = createENR1MClient({
@@ -109,7 +109,7 @@ The system consists of four main contracts:
 ### Client Setup
 
 ```typescript
-import { ENR1MClient, createENR1MClient } from '@enr1m/sdk'
+import { ENR1MClient, createENR1MClient } from '@prime/sdk'
 
 // Factory function (recommended)
 const client = createENR1MClient({
@@ -188,13 +188,13 @@ const formattedUSDC = client.formatUSDCAmount(amount) // "15000.25"
 const parsedUSDC = client.parseUSDCAmount("15000.25") // BigInt
 
 // Calculations
-import { calculateUserShare, calculateAPY } from '@enr1m/sdk'
+import { calculateUserShare, calculateAPY } from '@prime/sdk'
 
 const userShare = calculateUserShare(userBalance, totalDistribution, eligibleSupply)
 const apy = calculateAPY(monthlyDistribution, userBalance, eligibleSupply)
 
 // Time helpers
-import { getRecordDate, getDistributionDate, getClaimDeadline } from '@enr1m/sdk'
+import { getRecordDate, getDistributionDate, getClaimDeadline } from '@prime/sdk'
 
 const recordDate = getRecordDate(2024, 10) // October 25, 2024
 const distributionDate = getDistributionDate(2024, 10) // October 26, 2024
@@ -213,7 +213,7 @@ const deadline = getClaimDeadline(distributionDate, 90) // 90 days later
 ### Network Configuration
 
 ```typescript
-import { CHAIN_CONFIGS, getChainConfig } from '@enr1m/sdk'
+import { CHAIN_CONFIGS, getChainConfig } from '@prime/sdk'
 
 const config = getChainConfig(SUPPORTED_CHAINS.POLYGON)
 console.log(config.contracts.token) // Token contract address
@@ -281,7 +281,7 @@ import {
   InsufficientBalanceError,
   InvalidSnapshotError,
   ClaimDeadlinePassedError
-} from '@enr1m/sdk'
+} from '@prime/sdk'
 
 try {
   await client.claim(snapshotId)
@@ -316,7 +316,7 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 
 - **Documentation**: [docs.enr1m.com](https://docs.enr1m.com)
 - **GitHub**: [github.com/enr1m/power-contract](https://github.com/enr1m/power-contract)
-- **NPM**: [@enr1m/sdk](https://www.npmjs.com/package/@enr1m/sdk)
+- **NPM**: [@prime/sdk](https://www.npmjs.com/package/@prime/sdk)
 - **Website**: [enr1m.com](https://enr1m.com)
 
 ## ⚡ Built with
