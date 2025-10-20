@@ -1,5 +1,5 @@
 {
-  "name": "@prime/sdk",
+  "name": "@token_prime/sdk",
   "version": "1.0.0",
   "description": "TypeScript SDK for Prime Power Plant Tokenization Platform",
   "main": "dist/index.js",
@@ -35,7 +35,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/enr1m/power-contract"
+    "url": "https://github.com/tokenprime/prime_sdk"
   },
   "dependencies": {
     "abitype": "^1.0.5",
